@@ -11,14 +11,14 @@
     <title>注册页面</title>
     <script>
         function login() {
-            location.href='http://localhost:8080/login';
+            location.href='http://localhost:8080/user/login';
         }
     </script>
   </head>
   <body>
 
 
- <form action="http://localhost:8080/register" method="post">
+ <form action="" method="post">
 
    <span>用户名:</span>
    <input type="text" name="username"/>
@@ -29,15 +29,19 @@
      <span>确认密码:</span>
      <input type="password" name="confirmpassword"/>
      <br/>
+   <span>邮箱:</span>
+   <input type="text" name="email"/>
+   <br/>
+   <span>手机:</span>
+   <input type="text" name="phone"/>
+   <br/>
      <span>密保问题:</span>
      <input type="text" name="question"/>
      <br/>
      <span>密保答案:</span>
      <input type="text" name="answer"/>
      <br/>
-     <span>邮箱:</span>
-     <input type="text" name="email"/>
-     <br/>
+
    <input type="submit" value="注册"/>
    <input type="button" value="登录" onclick="login()"/>
 

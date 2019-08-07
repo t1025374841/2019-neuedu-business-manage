@@ -3,10 +3,10 @@
 <head>
     <script>
         function register() {
-            location.href='http://localhost:8080/register';
+            location.href='http://localhost:8080/user/register';
         }
         function login() {
-            location.href='http://localhost:8080/login';
+            location.href='http://localhost:8080/user/login';
         }
     </script>
 </head>

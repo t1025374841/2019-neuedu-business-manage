@@ -11,14 +11,14 @@
     <title>登录</title>
       <script>
           function register() {
-              location.href='http://localhost:8080/register';
+              location.href='http://localhost:8080/user/register';
           }
       </script>
   </head>
   <body>
 
 
- <form action="http://localhost:8080/login" method="post">
+ <form action="" method="post">
 
    <span>用户名:</span>
    <input type="text" name="username"/>
