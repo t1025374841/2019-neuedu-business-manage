@@ -76,7 +76,7 @@ public class UserController {
         return "register";
     }
 
-    @RequestMapping("home")
+    @RequestMapping("userlist")
     public String home(HttpServletRequest request,
                        HttpServletResponse response){
         List<UserInfo> userInfoList=userService.findAll();
@@ -108,7 +108,7 @@ public class UserController {
 
         int i = userService.update(userInfo);
         if(i>0){
-            return "redirect:/user/home";
+            return "redirect:/user/userlist";
         }
 
         return "userupdate";
@@ -120,10 +120,15 @@ public class UserController {
         int i=userService.delete(userId);
         if(i==1){
 
-            return "redirect:/user/home";
+            return "redirect:/user/userlist";
         }
 
-        return "redirect:/user/home";
+        return "redirect:/user/userlist";
+    }
+
+    @RequestMapping("home")
+    public String home(){
+        return "home";
     }
 
 }

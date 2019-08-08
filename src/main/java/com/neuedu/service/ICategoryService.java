@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by tao on 2019/8/6.
  */
-public interface ICateegoryService {
+public interface ICategoryService {
     /*
     * 添加类别
     * */

@@ -11,12 +11,12 @@
     <title>修改</title>
     <script>
         function back() {
-            location.href='http://localhost:8080/user/home';
+            location.href='http://localhost:8080/user/userlist';
         }
     </script>
 </head>
 <body>
-
+<h1>用户修改</h1>
 <form action="" method="post">
 
     <span>id:</span>

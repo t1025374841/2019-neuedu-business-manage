@@ -12,7 +12,10 @@
     <title>分类列表</title>
 </head>
 <body>
-
+<h1>类别列表</h1>
+<a href="/user/home">返回</a>
+<br/>
+<a href="add">添加类别</a>
 <table border="1">
     <thead>
       <th>类别Id</th>
@@ -27,7 +30,7 @@
         <tr>
             <td>${category.id}</td>
             <td>${category.name}</td>
-            <td>${category.parentId}</td>
+            <td>${category.parentCategory.name}</td>
             <td>${category.status}</td>
             <td>${category.createTime}</td>
             <td>${category.updateTime}</td>

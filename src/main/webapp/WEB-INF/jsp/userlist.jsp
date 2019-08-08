@@ -11,30 +11,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>主页</title>
-    <script>
-        function updateUser(e) {
-            var id=e.id;
-            console.info(id);
-            location.href='http://localhost:8080/update?'+'user_id=' + encodeURI(id);
-        }
-        function deleteUser(e) {
-            var id=e.id;
-//            var a=document.getElementsByName("delete");
-//            var id=a.id;
-            console.info(id);
-            location.href='http://localhost:8080/delete?'+'user_id=' + encodeURI(id);
-        }
+    <title>用户列表</title>
 
-    </script>
 </head>
 <body>
-
-<p>首页</p>
-
 欢迎，${userinfo.username}登录 &nbsp&nbsp<a href="/user/outLogin">退出登录</a>
-
 <br/>
+<h1>用户列表</h1>
+<a href="/user/home">返回</a>
+<br/>
+<br/>
+
+
 <table border="1">
     <tr>
         <th>id</th>
